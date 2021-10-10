@@ -1,42 +1,26 @@
-[![Build Status](https://travis-ci.org/Dynalon/mdwiki.png?branch=master)](https://travis-ci.org/Dynalon/mdwiki)
-
-MDwiki
+MDtiki
 ======
 
-100% static single file CMS/Wiki done purely with client-side Javascript and HTML5.
-
-See http://www.mdwiki.info for more info and documentation.
-------
-
-## !! This project is currently unmaintained!!
-
-Download
---------
+This is a fork from the rather well done MDwiki which takes his concept and move it in another direction.
 
 See <https://github.com/Dynalon/mdwiki/releases> for readily precompiled releases.
 
-How to build from source
-------------------------
-(applies to master branch, stable may differ)
+See http://www.mdwiki.info for more info and documentation.
 
-1. Install node.js >= 0.10 and npm (if not included)
-2. Clone the mdwiki repo
-3. Install deps and build MDwiki (you need automake installed - if you are on Windows check the contents of the Makefile for the list of commands to run them manually):
+## Goals
+1. Update the base libraries and gimmiks with modern alternatives.
+1. Replace the index.html file with a themeable template.
+1. Add a sqlite DB backend.
+1. Add user registration.
+1. Add yaml metadata.
+1. Add yaml types.
+1. Add type api.
+1. Add Pages administration
+1. Add Forms
 
-```
-    make
-```
+Basically I want to turn MD Wiki into Yet Another Content Management System.
+All using node as a builder and package manager.
 
-4. Find the `mdwiki.html` in the `dist/` folder
+So MDWiki to me is a beautiful Concept Because it is so simple.
 
-5. Development
-
-For development, use
-
-    grunt devel 
-
-To get unminified source code compiled to `dist/mdwiki-debug.html`, as well as auto file watching and livereload support. Symlink the development mdwiki file into your webroot for testing.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Dynalon/mdwiki/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
